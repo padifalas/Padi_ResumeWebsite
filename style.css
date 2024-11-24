@@ -7,7 +7,7 @@
 
 /* general body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Helmet Neue;
     background-color: #164A41;
     color: #fff;
     line-height: 1.6;
@@ -21,9 +21,13 @@ header {
     padding: 10px 20px;
     background-color: #4D774E;
     border-bottom: 2px solid #444;
+    
+    border: 3px solid #d4b88f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-header .logo {
+header .logo { 
     font-family: Helmet Neue;
     font-size: 1.5em;
     font-weight: bold;
@@ -93,7 +97,7 @@ header nav ul li a:hover {
 }
 
 /* Projects Section */
-.Projects {
+.Projects {  /* heading */
     text-align: center;
     font-family: "Helmet Neue";
     color: #F1B24A;
@@ -106,17 +110,23 @@ header nav ul li a:hover {
     color: #F1B24A;
 }
 
+
 .myProject-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     gap: 20px;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.project-item {
+    width: 200px;
+    text-align: center;
+} 
 .project-item img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 2px solid #d4b88f;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 .Projects-grid {
@@ -125,7 +135,9 @@ header nav ul li a:hover {
     gap: 20px;
     padding: 10px;
 }
-/* skills Section */
+
+
+/* Skills Section */
 .skills {
     text-align: center;
     font-family: "Helmet Neue";
@@ -139,9 +151,38 @@ header nav ul li a:hover {
     color: #F1B24A;
 }
 
-.skills li {
-    font-size: 15px;
+/* Skills container with three columns */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between columns */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+/* Each column styling */
+.skills-column {
+    flex: 1; /* All columns share equal space */
+    text-align: left; /* Aligns content to the left */
+    max-width: 300px; /* Optional: Limit column width */
+}
+
+.skills-column h3 {
+    font-size: 1.5em;
+    font-family: "Helmet Neue";
+    margin-bottom: 15px;
+    color: #F1B24A;
+}
+
+.skills-column ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.skills-column li {
+    font-size: 1em;
     color: white;
+    margin-bottom: 10px; /* Adds spacing between list items */
 }
 
 
