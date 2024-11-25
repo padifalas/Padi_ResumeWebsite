@@ -1,11 +1,11 @@
-/* Reset default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* general body Styling */
+/*  body Styling */
 body {
     font-family: Helmet Neue;
     background-color: #164A41;
@@ -151,20 +151,20 @@ header nav ul li a:hover {
     color: #F1B24A;
 }
 
-/* Skills container with three columns */
+/* has the three columns */
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between columns */
+    gap: 20px; 
     margin-top: 20px;
-    flex-wrap: wrap; /* Makes it responsive */
+    flex-wrap: wrap; 
 }
 
 /* Each column styling */
 .skills-column {
-    flex: 1; /* All columns share equal space */
-    text-align: left; /* Aligns content to the left */
-    max-width: 300px; /* Optional: Limit column width */
+    flex: 1;
+    text-align: left; 
+    max-width: 300px;
 }
 
 .skills-column h3 {
@@ -175,14 +175,14 @@ header nav ul li a:hover {
 }
 
 .skills-column ul {
-    list-style: none; /* Removes bullet points */
+    list-style: none;
     padding: 0;
 }
 
 .skills-column li {
     font-size: 1em;
     color: white;
-    margin-bottom: 10px; /* Adds spacing between list items */
+    margin-bottom: 10px;
 }
 
 
